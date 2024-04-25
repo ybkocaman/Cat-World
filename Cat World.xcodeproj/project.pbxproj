@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466BD8F72BDA459000E142FB /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BD8F62BDA459000E142FB /* BreedViewModel.swift */; };
+		466BD8F92BDA45A100E142FB /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BD8F82BDA45A100E142FB /* Breed.swift */; };
+		466BD8FB2BDA497300E142FB /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BD8FA2BDA497300E142FB /* BreedImage.swift */; };
+		466BD8FD2BDA672500E142FB /* BreedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BD8FC2BDA672500E142FB /* BreedRowView.swift */; };
+		466BD9012BDA7A8000E142FB /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BD9002BDA7A8000E142FB /* BreedDetailView.swift */; };
 		46D79F212BD93F0C0069B634 /* Cat_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D79F202BD93F0C0069B634 /* Cat_WorldApp.swift */; };
 		46D79F232BD93F0C0069B634 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D79F222BD93F0C0069B634 /* ContentView.swift */; };
 		46D79F252BD93F0E0069B634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D79F242BD93F0E0069B634 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		466BD8F62BDA459000E142FB /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		466BD8F82BDA45A100E142FB /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		466BD8FA2BDA497300E142FB /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
+		466BD8FC2BDA672500E142FB /* BreedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRowView.swift; sourceTree = "<group>"; };
+		466BD9002BDA7A8000E142FB /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 		46D79F1D2BD93F0C0069B634 /* Cat World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D79F202BD93F0C0069B634 /* Cat_WorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_WorldApp.swift; sourceTree = "<group>"; };
 		46D79F222BD93F0C0069B634 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466BD8F32BDA453100E142FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				466BD8F82BDA45A100E142FB /* Breed.swift */,
+				466BD8FA2BDA497300E142FB /* BreedImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		466BD8F42BDA453F00E142FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				466BD8F62BDA459000E142FB /* BreedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		466BD8F52BDA454D00E142FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46D79F222BD93F0C0069B634 /* ContentView.swift */,
+				466BD8FC2BDA672500E142FB /* BreedRowView.swift */,
+				466BD9002BDA7A8000E142FB /* BreedDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		46D79F142BD93F0C0069B634 = {
 			isa = PBXGroup;
 			children = (
@@ -95,10 +132,12 @@
 		46D79F1F2BD93F0C0069B634 /* Cat World */ = {
 			isa = PBXGroup;
 			children = (
-				46D79F202BD93F0C0069B634 /* Cat_WorldApp.swift */,
-				46D79F222BD93F0C0069B634 /* ContentView.swift */,
+				466BD8F32BDA453100E142FB /* Model */,
+				466BD8F52BDA454D00E142FB /* View */,
+				466BD8F42BDA453F00E142FB /* ViewModel */,
 				46D79F242BD93F0E0069B634 /* Assets.xcassets */,
 				46D79F262BD93F0E0069B634 /* Cat_World.entitlements */,
+				46D79F202BD93F0C0069B634 /* Cat_WorldApp.swift */,
 				46D79F272BD93F0E0069B634 /* Preview Content */,
 			);
 			path = "Cat World";
@@ -259,7 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466BD8FD2BDA672500E142FB /* BreedRowView.swift in Sources */,
+				466BD8F92BDA45A100E142FB /* Breed.swift in Sources */,
 				46D79F232BD93F0C0069B634 /* ContentView.swift in Sources */,
+				466BD9012BDA7A8000E142FB /* BreedDetailView.swift in Sources */,
+				466BD8F72BDA459000E142FB /* BreedViewModel.swift in Sources */,
+				466BD8FB2BDA497300E142FB /* BreedImage.swift in Sources */,
 				46D79F212BD93F0C0069B634 /* Cat_WorldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
